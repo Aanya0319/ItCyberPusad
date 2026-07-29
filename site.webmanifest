@@ -1,0 +1,22 @@
+{
+  "name": "IT Cyber Business Suite",
+  "short_name": "IT Cyber",
+  "description": "Responsive business dashboard for customers, leads, projects, tasks, reports and automation configuration.",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#f4f6f8",
+  "theme_color": "#0f172a",
+  "icons": [
+    {
+      "src": "assets/images/it-cyber-favicon.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/images/it-cyber-logo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}

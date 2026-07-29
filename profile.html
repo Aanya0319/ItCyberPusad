@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0f172a">
+  <meta name="description" content="Manage your IT Cyber Business Suite profile and account preferences.">
+  <title>My Profile | IT Cyber Business Suite</title>
+  <link rel="icon" href="assets/images/it-cyber-favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="assets/images/it-cyber-logo.png">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="profile">
+  <div class="dashboard-shell">
+    <aside class="sidebar" id="sidebar" aria-label="Main navigation">
+      <div class="sidebar__brand">
+        <span class="sidebar__logo"><img src="assets/images/it-cyber-logo.png" alt="IT Cyber logo"></span>
+        <div><strong data-company-short>IT Cyber</strong><span data-company-suffix>Business Suite</span></div>
+      </div>
+      <nav class="sidebar__nav">
+        <p class="sidebar__label">Workspace</p>
+        <a class="nav-link" href="index.html"><img src="assets/icons/dashboard.svg" alt=""><span>Dashboard</span></a>
+        <a class="nav-link" href="customers.html"><img src="assets/icons/users.svg" alt=""><span>Customers</span></a>
+        <a class="nav-link" href="leads.html"><img src="assets/icons/target.svg" alt=""><span>Leads</span></a>
+        <a class="nav-link" href="projects.html"><img src="assets/icons/folder.svg" alt=""><span>Projects</span></a>
+        <a class="nav-link" href="tasks.html"><img src="assets/icons/check-square.svg" alt=""><span>Tasks</span></a>
+        <a class="nav-link" href="reports.html"><img src="assets/icons/chart.svg" alt=""><span>Reports</span></a>
+        <a class="nav-link" href="settings.html"><img src="assets/icons/settings.svg" alt=""><span>Settings</span></a>
+      </nav>
+    </aside>
+
+    <div class="sidebar-overlay" id="sidebarOverlay" aria-hidden="true"></div>
+
+    <main class="main-content">
+      <header class="topbar">
+        <div class="topbar__left">
+          <button class="icon-button menu-button" id="menuButton" type="button" aria-label="Open navigation menu" aria-controls="sidebar" aria-expanded="false"><img src="assets/icons/menu.svg" alt=""></button>
+          <div><h1>My Profile</h1><p data-current-date aria-live="polite"></p></div>
+        </div>
+        <div class="topbar__right">
+          <button class="icon-button notification-button" id="notificationButton" type="button" aria-label="View notifications"><img src="assets/icons/bell.svg" alt=""><span class="notification-dot" aria-hidden="true"></span></button>
+          <div class="profile" aria-label="Signed in user"><span class="profile__avatar" data-user-initials aria-hidden="true">KA</span><div class="profile__details"><strong data-user-name>Kautuk Ade</strong><span data-user-role>Administrator</span></div></div>
+        </div>
+      </header>
+
+      <div class="page-back-bar"><button class="page-back-button" type="button" data-back-button data-back-fallback="index.html"><img src="assets/icons/arrow-left.svg" alt=""><span>Back to dashboard</span></button></div>
+
+      <section class="page-heading" id="overview">
+        <div><p class="eyebrow">Account center</p><h2>Your profile and workspace identity</h2><p>Review your details, update your avatar and manage account shortcuts.</p></div>
+        <a class="secondary-button" href="settings.html">Open Settings</a>
+      </section>
+
+      <section class="profile-page-grid">
+        <article class="panel profile-summary-card">
+          <div class="profile-summary-card__cover" aria-hidden="true"></div>
+          <div class="profile-summary-card__body">
+            <div class="profile-avatar profile-avatar--large" data-user-avatar>
+              <img data-user-avatar-image alt="User profile photo" hidden>
+              <span data-user-initials>KA</span>
+            </div>
+            <div class="profile-summary-card__identity">
+              <h2 data-user-name>Kautuk Ade</h2>
+              <p><span data-user-job-title>Frontend Developer</span> · <span data-user-role>Administrator</span></p>
+              <span class="account-status"><span aria-hidden="true"></span> Active account</span>
+            </div>
+            <div class="profile-contact-list">
+              <div><img src="assets/icons/mail.svg" alt=""><span data-user-email>kautuk@example.com</span></div>
+              <div><img src="assets/icons/phone.svg" alt=""><span data-user-phone>+91 98765 43210</span></div>
+              <div><img src="assets/icons/map-pin.svg" alt=""><span data-user-location>Pune, India</span></div>
+            </div>
+            <div class="profile-summary-card__actions">
+              <a class="primary-button" href="#edit-profile">Edit profile</a>
+              <a class="secondary-button" href="settings.html#profileSettingsForm">Account settings</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="panel profile-account-card">
+          <div class="panel__header"><div><p class="eyebrow">Workspace</p><h2>Account overview</h2></div><img class="profile-card-icon" src="assets/icons/shield.svg" alt=""></div>
+          <div class="profile-account-list">
+            <div><span>Access level</span><strong data-user-role>Administrator</strong></div>
+            <div><span>Member since</span><strong>July 2026</strong></div>
+            <div><span>Timezone</span><strong data-user-timezone>Asia/Kolkata</strong></div>
+            <div><span>Theme</span><strong data-user-theme>Light</strong></div>
+          </div>
+          <div class="profile-workspace-stats">
+            <div><strong id="profileCustomersCount">0</strong><span>Customers</span></div>
+            <div><strong id="profileProjectsCount">0</strong><span>Projects</span></div>
+            <div><strong id="profileTasksCount">0</strong><span>Tasks</span></div>
+          </div>
+        </article>
+      </section>
+
+      <section class="panel profile-edit-panel" id="edit-profile" aria-labelledby="editProfileTitle">
+        <div class="panel__header"><div><p class="eyebrow">Personal information</p><h2 id="editProfileTitle">Edit profile</h2></div><span class="panel__meta">Saved in this browser</span></div>
+        <form id="profilePageForm" class="profile-edit-form">
+          <div class="profile-photo-editor">
+            <div class="profile-avatar profile-avatar--editor" id="profileAvatarPreview" data-user-avatar>
+              <img data-user-avatar-image alt="Profile photo preview" hidden>
+              <span data-user-initials>KA</span>
+            </div>
+            <div><h3>Profile photo</h3><p>Upload a JPG, PNG or WebP image under 1 MB.</p><div class="profile-photo-actions"><label class="secondary-button file-button" for="profileAvatarInput">Upload photo</label><input class="visually-hidden" id="profileAvatarInput" type="file" accept="image/png,image/jpeg,image/webp"><button class="text-button text-button--danger" id="removeProfileAvatar" type="button">Remove photo</button></div></div>
+          </div>
+
+          <div class="form-grid">
+            <div class="form-field"><label for="profileFullName">Full name</label><input id="profileFullName" name="fullName" required autocomplete="name"></div>
+            <div class="form-field"><label for="profileEmail">Email address</label><input id="profileEmail" name="email" type="email" required autocomplete="email"></div>
+            <div class="form-field"><label for="profileRole">Account role</label><input id="profileRole" name="role" required></div>
+            <div class="form-field"><label for="profileJobTitle">Job title</label><input id="profileJobTitle" name="jobTitle" required autocomplete="organization-title"></div>
+            <div class="form-field"><label for="profilePhone">Phone number</label><input id="profilePhone" name="profilePhone" type="tel" autocomplete="tel"></div>
+            <div class="form-field"><label for="profileCity">City</label><input id="profileCity" name="city" autocomplete="address-level2"></div>
+            <div class="form-field form-field--full"><label for="profileCountry">Country</label><input id="profileCountry" name="country" autocomplete="country-name"></div>
+            <div class="form-field form-field--full"><label for="profileBio">Bio</label><textarea id="profileBio" name="bio" maxlength="240" placeholder="Write a short professional introduction."></textarea><span class="field-help"><span id="profileBioCount">0</span>/240 characters</span></div>
+          </div>
+          <div class="form-actions"><button class="secondary-button" id="resetProfilePageForm" type="button">Restore saved values</button><button class="primary-button" type="submit">Save profile</button></div>
+        </form>
+      </section>
+
+      <section class="profile-options-grid">
+        <article class="panel profile-option-card">
+          <span class="profile-option-card__icon"><img src="assets/icons/bell.svg" alt=""></span>
+          <div><h3>Notification preferences</h3><p>Control email alerts, task reminders and weekly reports.</p></div>
+          <a class="secondary-button" href="settings.html#notificationSettingsForm">Manage notifications</a>
+        </article>
+        <article class="panel profile-option-card">
+          <span class="profile-option-card__icon"><img src="assets/icons/settings.svg" alt=""></span>
+          <div><h3>Appearance and account</h3><p>Choose theme, regional formats and other workspace preferences.</p></div>
+          <a class="secondary-button" href="settings.html">Open settings</a>
+        </article>
+        <article class="panel profile-option-card profile-option-card--danger">
+          <span class="profile-option-card__icon"><img src="assets/icons/log-out.svg" alt=""></span>
+          <div><h3>Sign out</h3><p>End this local demo session. Your saved workspace data will remain available.</p></div>
+          <button class="danger-button" type="button" data-sign-out>Sign out</button>
+        </article>
+      </section>
+
+      <footer class="page-footer"><p>&copy; <span data-current-year></span> IT Cyber Business Suite. Built with HTML, CSS and JavaScript.</p></footer>
+    </main>
+  </div>
+  <script src="js/app.js" defer></script>
+</body>
+</html>

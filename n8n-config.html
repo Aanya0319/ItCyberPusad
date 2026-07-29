@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0f172a">
+  <meta name="description" content="Connect and configure n8n automation in IT Cyber Business Suite.">
+  <title>n8n Configuration | IT Cyber Business Suite</title>
+  <link rel="icon" href="assets/images/it-cyber-favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="assets/images/it-cyber-logo.png">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="n8n-config">
+  <div class="dashboard-shell">
+    <aside class="sidebar" id="sidebar" aria-label="Main navigation">
+      <div class="sidebar__brand"><span class="sidebar__logo"><img src="assets/images/it-cyber-logo.png" alt="IT Cyber logo"></span><div><strong data-company-short>IT Cyber</strong><span data-company-suffix>Business Suite</span></div></div>
+      <nav class="sidebar__nav"><p class="sidebar__label">Workspace</p><a class="nav-link" href="index.html"><img src="assets/icons/dashboard.svg" alt=""><span>Dashboard</span></a><a class="nav-link" href="customers.html"><img src="assets/icons/users.svg" alt=""><span>Customers</span></a><a class="nav-link" href="leads.html"><img src="assets/icons/target.svg" alt=""><span>Leads</span></a><a class="nav-link" href="projects.html"><img src="assets/icons/folder.svg" alt=""><span>Projects</span></a><a class="nav-link" href="tasks.html"><img src="assets/icons/check-square.svg" alt=""><span>Tasks</span></a><a class="nav-link" href="reports.html"><img src="assets/icons/chart.svg" alt=""><span>Reports</span></a><a class="nav-link active" href="settings.html" aria-current="page"><img src="assets/icons/settings.svg" alt=""><span>Settings</span></a></nav>
+    </aside>
+    <div class="sidebar-overlay" id="sidebarOverlay" aria-hidden="true"></div>
+
+    <main class="main-content">
+      <header class="topbar">
+        <div class="topbar__left"><button class="icon-button menu-button" id="menuButton" type="button" aria-label="Open navigation menu" aria-controls="sidebar" aria-expanded="false"><img src="assets/icons/menu.svg" alt=""></button><div><h1>n8n Configuration</h1><p data-current-date aria-live="polite"></p></div></div>
+        <div class="topbar__right"><button class="icon-button notification-button" id="notificationButton" type="button" aria-label="View notifications"><img src="assets/icons/bell.svg" alt=""><span class="notification-dot" aria-hidden="true"></span></button><div class="profile" aria-label="Signed in user"><span class="profile__avatar" data-user-initials aria-hidden="true">KA</span><div class="profile__details"><strong data-user-name>Kautuk Ade</strong><span data-user-role>Administrator</span></div></div></div>
+      </header>
+
+      <div class="page-back-bar"><button class="page-back-button" type="button" data-back-button data-back-fallback="settings.html"><img src="assets/icons/arrow-left.svg" alt=""><span>Back to settings</span></button></div>
+
+      <section class="page-heading n8n-page-heading">
+        <div><p class="eyebrow">Automation integration</p><h2>Connect your n8n workspace</h2><p>Configure API access, verify instance health, test webhooks and generate secure self-hosting settings.</p></div>
+        <div class="n8n-heading-actions"><span class="connection-badge connection-badge--idle" id="n8nConnectionBadge"><span></span>Not configured</span></div>
+      </section>
+
+      <section class="settings-layout">
+        <nav class="panel settings-menu" aria-label="Settings sections">
+          <p class="settings-menu__title">Settings</p>
+          <a class="settings-menu__link" href="settings.html#profileSettingsForm"><span>01</span>Profile</a>
+          <a class="settings-menu__link" href="settings.html#businessSettingsForm"><span>02</span>Business</a>
+          <a class="settings-menu__link" href="settings.html#appearanceSettingsForm"><span>03</span>Appearance</a>
+          <a class="settings-menu__link" href="settings.html#regionalSettingsForm"><span>04</span>Regional</a>
+          <a class="settings-menu__link" href="settings.html#notificationSettingsForm"><span>05</span>Notifications</a>
+          <a class="settings-menu__link" href="settings.html#securitySettings"><span>06</span>Security</a>
+          <a class="settings-menu__link" href="settings.html#dataSettings"><span>07</span>Data</a>
+          <a class="settings-menu__link active" href="n8n-config.html" aria-current="page"><span>08</span>n8n Automation</a>
+        </nav>
+
+        <div class="settings-content n8n-settings-content">
+          <section class="n8n-overview-grid" aria-label="n8n connection overview">
+            <article class="panel n8n-overview-card"><span>Instance</span><strong id="n8nOverviewInstance">Not configured</strong><small id="n8nOverviewType">Cloud or self-hosted</small></article>
+            <article class="panel n8n-overview-card"><span>API access</span><strong id="n8nOverviewApi">Not tested</strong><small id="n8nOverviewApiTime">No test completed</small></article>
+            <article class="panel n8n-overview-card"><span>Webhook</span><strong id="n8nOverviewWebhook">Not configured</strong><small>Test and production endpoints</small></article>
+          </section>
+
+          <form class="panel settings-section n8n-section" id="n8nConnectionForm" novalidate>
+            <div class="settings-section__header"><div><p class="eyebrow">Step 1</p><h2>Instance and API connection</h2><p>Use your n8n Cloud workspace URL or the public HTTPS URL of a self-hosted instance.</p></div><div class="n8n-brand-chip" aria-label="n8n"><span>n8n</span>Automation</div></div>
+
+            <div class="n8n-security-note"><strong>Security:</strong> API keys are sensitive. By default the key is kept only for this browser tab. Enable local saving only on a trusted private device. For production, call n8n through a server-side function or backend so the key is never shipped to frontend users.</div>
+
+            <div class="form-grid">
+              <div class="form-field"><label for="n8nConnectionName">Connection name</label><input id="n8nConnectionName" name="connectionName" value="Primary automation" maxlength="60" required></div>
+              <div class="form-field"><label for="n8nHostingType">Hosting type</label><select id="n8nHostingType" name="hostingType"><option value="cloud">n8n Cloud</option><option value="self-hosted">Self-hosted</option><option value="local">Local development</option></select></div>
+              <div class="form-field"><label for="n8nConnectionMode">Connection route</label><select id="n8nConnectionMode" name="connectionMode"><option value="direct">Direct browser request</option><option value="netlify">Secure Netlify Function</option></select></div>
+              <div class="form-field"><label for="n8nProxyPath">Proxy endpoint</label><input id="n8nProxyPath" name="proxyPath" value="/.netlify/functions/n8n-proxy"><span class="field-help">Used only in Secure Netlify Function mode.</span></div>
+              <div class="form-field form-field--full"><label for="n8nInstanceUrl">Instance URL</label><div class="input-with-action"><input id="n8nInstanceUrl" name="instanceUrl" type="url" placeholder="https://your-workspace.app.n8n.cloud" required inputmode="url"><button class="text-button" id="openN8nInstance" type="button">Open</button></div><span class="field-help">Do not include <code>/api/v1</code> or a workflow path.</span></div>
+              <div class="form-field"><label for="n8nApiBasePath">REST API base path</label><input id="n8nApiBasePath" name="apiBasePath" value="/api/v1" required></div>
+              <div class="form-field"><label for="n8nRequestTimeout">Request timeout</label><select id="n8nRequestTimeout" name="requestTimeout"><option value="5000">5 seconds</option><option value="10000" selected>10 seconds</option><option value="20000">20 seconds</option><option value="30000">30 seconds</option></select></div>
+              <div class="form-field form-field--full"><label for="n8nApiKey">n8n API key</label><div class="password-field n8n-key-field"><input id="n8nApiKey" name="apiKey" type="password" autocomplete="off" placeholder="Paste the API key created in n8n Settings → n8n API"><button id="toggleN8nApiKey" type="button" aria-label="Show API key">Show</button></div><span class="field-help">The public API uses the <code>X-N8N-API-KEY</code> request header.</span></div>
+              <div class="form-field form-field--full"><label class="login-checkbox n8n-checkbox"><input id="n8nRememberApiKey" name="rememberApiKey" type="checkbox">Save API key in this browser's localStorage</label></div>
+            </div>
+
+            <div class="n8n-test-actions"><button class="secondary-button" id="testN8nHealth" type="button">Test health</button><button class="secondary-button" id="testN8nApi" type="button">Test API key</button><button class="primary-button" type="submit">Save connection</button></div>
+            <div class="n8n-test-result" id="n8nConnectionResult" role="status" aria-live="polite"><span class="n8n-result-icon">i</span><div><strong>Ready to configure</strong><p>Enter an instance URL, then run a health or API test.</p></div></div>
+          </form>
+
+          <section class="panel settings-section n8n-section" id="n8nWebhookSection">
+            <div class="settings-section__header"><div><p class="eyebrow">Step 2</p><h2>Webhook tester</h2><p>Send a real request to an n8n Webhook node and inspect the response.</p></div><span class="status-badge status-new">Live request</span></div>
+            <div class="n8n-webhook-guide"><strong>Correct workflow:</strong> use the Test URL while the Webhook node is listening in the editor. Publish/activate the workflow before using the Production URL.</div>
+            <form id="n8nWebhookForm" novalidate>
+              <div class="form-grid">
+                <div class="form-field form-field--full"><label for="n8nTestWebhookUrl">Test webhook URL</label><input id="n8nTestWebhookUrl" name="testWebhookUrl" type="url" placeholder="https://.../webhook-test/your-path" inputmode="url"></div>
+                <div class="form-field form-field--full"><label for="n8nProductionWebhookUrl">Production webhook URL</label><div class="input-with-action"><input id="n8nProductionWebhookUrl" name="productionWebhookUrl" type="url" placeholder="https://.../webhook/your-path" inputmode="url"><button class="text-button" id="copyProductionWebhook" type="button">Copy</button></div></div>
+                <div class="form-field"><label for="n8nWebhookMethod">HTTP method</label><select id="n8nWebhookMethod" name="method"><option>POST</option><option>GET</option><option>PUT</option><option>PATCH</option><option>DELETE</option></select></div>
+                <div class="form-field"><label for="n8nWebhookTarget">Send request to</label><select id="n8nWebhookTarget" name="target"><option value="test">Test URL</option><option value="production">Production URL</option></select></div>
+                <div class="form-field"><label for="n8nWebhookHeaderName">Optional header name</label><input id="n8nWebhookHeaderName" name="headerName" placeholder="X-Webhook-Secret"></div>
+                <div class="form-field"><label for="n8nWebhookHeaderValue">Optional header value</label><input id="n8nWebhookHeaderValue" name="headerValue" type="password" autocomplete="off" placeholder="Secret value"></div>
+                <div class="form-field form-field--full"><label for="n8nWebhookPayload">JSON payload</label><textarea class="code-textarea" id="n8nWebhookPayload" name="payload" rows="9" spellcheck="false">{
+  "event": "dashboard.test",
+  "source": "IT Cyber Business Suite",
+  "message": "Hello from the n8n configuration page"
+}</textarea><span class="field-help" id="n8nPayloadValidation">Valid JSON</span></div>
+              </div>
+              <div class="form-actions"><button class="secondary-button" id="formatN8nPayload" type="button">Format JSON</button><button class="primary-button" id="sendN8nWebhook" type="submit">Send webhook</button></div>
+            </form>
+            <div class="n8n-response-panel" id="n8nWebhookResponse" hidden><div class="n8n-response-panel__header"><div><strong>Response</strong><span id="n8nWebhookResponseMeta"></span></div><button class="text-button" id="copyN8nResponse" type="button">Copy response</button></div><pre id="n8nWebhookResponseBody"></pre></div>
+          </section>
+
+          <section class="panel settings-section n8n-section" id="n8nEnvironmentSection">
+            <div class="settings-section__header"><div><p class="eyebrow">Step 3</p><h2>Self-hosted environment generator</h2><p>Generate a safe starting configuration for Docker, VPS or reverse-proxy deployments.</p></div><button class="secondary-button" id="copyN8nEnvironment" type="button">Copy variables</button></div>
+            <div class="form-grid">
+              <div class="form-field"><label for="n8nPublicDomain">Public domain</label><input id="n8nPublicDomain" placeholder="n8n.example.com" inputmode="url"></div>
+              <div class="form-field"><label for="n8nTimezone">Timezone</label><input id="n8nTimezone" value="Asia/Kolkata"></div>
+              <div class="form-field"><label for="n8nProtocol">Protocol</label><select id="n8nProtocol"><option value="https">HTTPS</option><option value="http">HTTP (local only)</option></select></div>
+              <div class="form-field"><label for="n8nPort">Internal port</label><input id="n8nPort" type="number" min="1" max="65535" value="5678"></div>
+            </div>
+            <div class="n8n-code-block"><div><span>.env configuration</span><small>Keep the encryption key private and back it up.</small></div><pre id="n8nEnvironmentOutput"></pre></div>
+          </section>
+
+          <section class="panel settings-section n8n-section" id="n8nCodeSection">
+            <div class="settings-section__header"><div><p class="eyebrow">Developer tools</p><h2>Generated request examples</h2><p>Examples update automatically from your current connection fields. API keys are redacted.</p></div></div>
+            <div class="n8n-code-tabs" role="tablist" aria-label="Code examples"><button class="n8n-code-tab active" type="button" data-code-tab="curl" role="tab" aria-selected="true">cURL</button><button class="n8n-code-tab" type="button" data-code-tab="javascript" role="tab" aria-selected="false">JavaScript</button><button class="n8n-code-tab" type="button" data-code-tab="netlify" role="tab" aria-selected="false">Netlify proxy</button></div>
+            <div class="n8n-code-block n8n-code-example"><button class="text-button" id="copyN8nCode" type="button">Copy code</button><pre id="n8nCodeOutput"></pre></div>
+          </section>
+
+          <section class="panel settings-section n8n-section" id="n8nLogsSection">
+            <div class="settings-section__header"><div><p class="eyebrow">Diagnostics</p><h2>Connection activity</h2><p>Recent tests from this browser. Secrets and request bodies are not logged.</p></div><button class="secondary-button" id="clearN8nLogs" type="button">Clear log</button></div>
+            <div class="n8n-log-list" id="n8nLogList"><p class="empty-helper">No connection tests yet.</p></div>
+          </section>
+
+          <section class="panel settings-section n8n-section" id="n8nDocumentationSection">
+            <div class="settings-section__header"><div><p class="eyebrow">Official resources</p><h2>n8n setup and documentation</h2><p>Use these official resources for API keys, webhooks, hosting and environment variables.</p></div></div>
+            <div class="n8n-doc-grid">
+              <a class="n8n-doc-card" href="https://docs.n8n.io/connect/n8n-api/authentication/" target="_blank" rel="noopener noreferrer"><strong>Create an API key</strong><span>Settings → n8n API, expiration and authentication.</span><b>Open guide ↗</b></a>
+              <a class="n8n-doc-card" href="https://docs.n8n.io/connect/n8n-api/" target="_blank" rel="noopener noreferrer"><strong>Public REST API</strong><span>Endpoints, pagination and API reference.</span><b>Open guide ↗</b></a>
+              <a class="n8n-doc-card" href="https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.webhook/" target="_blank" rel="noopener noreferrer"><strong>Webhook node</strong><span>Test/production URLs, methods and CORS settings.</span><b>Open guide ↗</b></a>
+              <a class="n8n-doc-card" href="https://docs.n8n.io/deploy/host-n8n/install-options/install-with-docker" target="_blank" rel="noopener noreferrer"><strong>Install with Docker</strong><span>Recommended self-hosting installation method.</span><b>Open guide ↗</b></a>
+              <a class="n8n-doc-card" href="https://docs.n8n.io/deploy/host-n8n/configure-n8n/basic-configuration/use-environment-variables/" target="_blank" rel="noopener noreferrer"><strong>Environment variables</strong><span>Configure endpoints, deployment and security.</span><b>Open guide ↗</b></a>
+              <a class="n8n-doc-card" href="https://docs.n8n.io/deploy/host-n8n/keep-n8n-running/monitor-n8n" target="_blank" rel="noopener noreferrer"><strong>Health monitoring</strong><span>Health, readiness and metrics endpoints.</span><b>Open guide ↗</b></a>
+            </div>
+          </section>
+
+          <section class="panel settings-section n8n-section n8n-danger-zone">
+            <div class="settings-section__header"><div><p class="eyebrow">Maintenance</p><h2>Configuration controls</h2><p>Export a redacted backup or remove the saved n8n connection from this browser.</p></div></div>
+            <div class="form-actions form-actions--spread"><button class="secondary-button" id="exportN8nConfig" type="button">Export redacted JSON</button><button class="danger-button" id="resetN8nConfig" type="button">Remove configuration</button></div>
+          </section>
+        </div>
+      </section>
+      <footer class="page-footer"><p>&copy; <span data-current-year></span> IT Cyber Business Suite. Built with HTML, CSS and JavaScript.</p></footer>
+    </main>
+  </div>
+  <script src="js/app.js" defer></script>
+</body>
+</html>

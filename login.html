@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0f172a">
+  <meta name="description" content="Sign in to the IT Cyber Business Suite dashboard demo.">
+  <title>Sign In | IT Cyber Business Suite</title>
+  <link rel="icon" href="assets/images/it-cyber-favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="assets/images/it-cyber-logo.png">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="login-page" data-page="login">
+  <main class="login-shell">
+    <section class="login-brand-panel" aria-label="IT Cyber Business Suite introduction">
+      <div class="login-brand"><span class="sidebar__logo"><img src="assets/images/it-cyber-logo.png" alt="IT Cyber logo"></span><div><strong data-company-short>IT Cyber</strong><span data-company-suffix>Business Suite</span></div></div>
+      <div class="login-brand-copy"><p class="eyebrow">Business workspace</p><h1>Manage customers, leads, projects and tasks in one clean dashboard.</h1><p>This is a frontend demonstration. Your workspace information is stored only in this browser.</p></div>
+      <div class="login-feature-list"><span>Responsive multi-page dashboard</span><span>Local data persistence</span><span>Profile and settings controls</span></div>
+    </section>
+    <section class="login-form-panel">
+      <form class="login-card" id="loginForm">
+        <div class="login-card__heading"><div class="profile-avatar" data-user-avatar><img data-user-avatar-image alt="User profile photo" hidden><span data-user-initials>KA</span></div><div><p class="eyebrow">Welcome back</p><h2>Sign in to your account</h2><p>Use your saved email and any password with at least 6 characters.</p></div></div>
+        <div class="form-field"><label for="loginEmail">Email address</label><input id="loginEmail" name="email" type="email" required autocomplete="email"></div>
+        <div class="form-field"><label for="loginPassword">Password</label><div class="password-field"><input id="loginPassword" name="password" type="password" minlength="6" required autocomplete="current-password"><button id="toggleLoginPassword" type="button" aria-label="Show password">Show</button></div></div>
+        <label class="login-checkbox"><input name="remember" type="checkbox" checked><span>Keep me signed in on this browser</span></label>
+        <button class="primary-button login-submit" type="submit">Sign in</button>
+        <p class="login-demo-note"><strong>Demo only:</strong> no password is sent or stored.</p>
+      </form>
+    </section>
+  </main>
+  <script src="js/app.js" defer></script>
+</body>
+</html>

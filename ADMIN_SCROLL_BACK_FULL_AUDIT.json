@@ -1,0 +1,200 @@
+[
+  {
+    "page": "404.html",
+    "width": 390,
+    "overflowX": false,
+    "errors": [],
+    "profileMenu": false,
+    "profileScrollable": null,
+    "lockedAfterEscape": false
+  },
+  {
+    "page": "customers.html",
+    "width": 390,
+    "overflowX": false,
+    "errors": [],
+    "profileMenu": true,
+    "profileScrollable": true,
+    "lockedAfterEscape": false
+  },
+  {
+    "page": "index.html",
+    "width": 390,
+    "overflowX": false,
+    "errors": [],
+    "profileMenu": true,
+    "profileScrollable": true,
+    "lockedAfterEscape": false
+  },
+  {
+    "page": "leads.html",
+    "width": 390,
+    "overflowX": false,
+    "errors": [],
+    "profileMenu": true,
+    "profileScrollable": true,
+    "lockedAfterEscape": false
+  },
+  {
+    "page": "login.html",
+    "width": 390,
+    "overflowX": false,
+    "errors": [],
+    "profileMenu": false,
+    "profileScrollable": null,
+    "lockedAfterEscape": false
+  },
+  {
+    "page": "n8n-config.html",
+    "width": 390,
+    "overflowX": false,
+    "errors": [],
+    "profileMenu": true,
+    "profileScrollable": true,
+    "lockedAfterEscape": false
+  },
+  {
+    "page": "profile.html",
+    "width": 390,
+    "overflowX": false,
+    "errors": [],
+    "profileMenu": true,
+    "profileScrollable": true,
+    "lockedAfterEscape": false
+  },
+  {
+    "page": "projects.html",
+    "width": 390,
+    "overflowX": false,
+    "errors": [],
+    "profileMenu": true,
+    "profileScrollable": true,
+    "lockedAfterEscape": false
+  },
+  {
+    "page": "reports.html",
+    "width": 390,
+    "overflowX": false,
+    "errors": [],
+    "profileMenu": true,
+    "profileScrollable": true,
+    "lockedAfterEscape": false
+  },
+  {
+    "page": "settings.html",
+    "width": 390,
+    "overflowX": false,
+    "errors": [],
+    "profileMenu": true,
+    "profileScrollable": true,
+    "lockedAfterEscape": false
+  },
+  {
+    "page": "tasks.html",
+    "width": 390,
+    "overflowX": false,
+    "errors": [],
+    "profileMenu": true,
+    "profileScrollable": true,
+    "lockedAfterEscape": false
+  },
+  {
+    "page": "404.html",
+    "width": 320,
+    "overflowX": false,
+    "errors": [],
+    "profileMenu": false,
+    "profileScrollable": null,
+    "lockedAfterEscape": false
+  },
+  {
+    "page": "customers.html",
+    "width": 320,
+    "overflowX": false,
+    "errors": [],
+    "profileMenu": true,
+    "profileScrollable": true,
+    "lockedAfterEscape": false
+  },
+  {
+    "page": "index.html",
+    "width": 320,
+    "overflowX": false,
+    "errors": [],
+    "profileMenu": true,
+    "profileScrollable": true,
+    "lockedAfterEscape": false
+  },
+  {
+    "page": "leads.html",
+    "width": 320,
+    "overflowX": false,
+    "errors": [],
+    "profileMenu": true,
+    "profileScrollable": true,
+    "lockedAfterEscape": false
+  },
+  {
+    "page": "login.html",
+    "width": 320,
+    "overflowX": false,
+    "errors": [],
+    "profileMenu": false,
+    "profileScrollable": null,
+    "lockedAfterEscape": false
+  },
+  {
+    "page": "n8n-config.html",
+    "width": 320,
+    "overflowX": false,
+    "errors": [],
+    "profileMenu": true,
+    "profileScrollable": true,
+    "lockedAfterEscape": false
+  },
+  {
+    "page": "profile.html",
+    "width": 320,
+    "overflowX": false,
+    "errors": [],
+    "profileMenu": true,
+    "profileScrollable": true,
+    "lockedAfterEscape": false
+  },
+  {
+    "page": "projects.html",
+    "width": 320,
+    "overflowX": false,
+    "errors": [],
+    "profileMenu": true,
+    "profileScrollable": true,
+    "lockedAfterEscape": false
+  },
+  {
+    "page": "reports.html",
+    "width": 320,
+    "overflowX": false,
+    "errors": [],
+    "profileMenu": true,
+    "profileScrollable": true,
+    "lockedAfterEscape": false
+  },
+  {
+    "page": "settings.html",
+    "width": 320,
+    "overflowX": false,
+    "errors": [],
+    "profileMenu": true,
+    "profileScrollable": true,
+    "lockedAfterEscape": false
+  },
+  {
+    "page": "tasks.html",
+    "width": 320,
+    "overflowX": false,
+    "errors": [],
+    "profileMenu": true,
+    "profileScrollable": true,
+    "lockedAfterEscape": false
+  }
+]

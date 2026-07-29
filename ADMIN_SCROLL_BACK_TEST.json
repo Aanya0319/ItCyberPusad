@@ -1,0 +1,68 @@
+[
+  {
+    "name": "desktop",
+    "bodyLocked": true,
+    "bodyPosition": "fixed",
+    "overlayVisible": true,
+    "menuScrollHeight": 892,
+    "menuClientHeight": 558,
+    "backVisible": true,
+    "workspaceLinks": 12,
+    "menuWithinViewport": true,
+    "overflowX": false,
+    "menuScrolled": true,
+    "scrollRestored": true,
+    "errors": []
+  },
+  {
+    "name": "mobile",
+    "bodyLocked": true,
+    "bodyPosition": "fixed",
+    "overlayVisible": true,
+    "menuScrollHeight": 928,
+    "menuClientHeight": 648,
+    "backVisible": true,
+    "workspaceLinks": 12,
+    "menuWithinViewport": true,
+    "overflowX": false,
+    "menuScrolled": true,
+    "scrollRestored": true,
+    "errors": []
+  },
+  {
+    "name": "small",
+    "bodyLocked": true,
+    "bodyPosition": "fixed",
+    "overlayVisible": true,
+    "menuScrollHeight": 928,
+    "menuClientHeight": 484,
+    "backVisible": true,
+    "workspaceLinks": 12,
+    "menuWithinViewport": true,
+    "overflowX": false,
+    "menuScrolled": true,
+    "scrollRestored": true,
+    "errors": []
+  },
+  {
+    "page": "profile.html",
+    "backButton": true,
+    "label": "Back to dashboard",
+    "overflowX": false,
+    "errors": []
+  },
+  {
+    "page": "settings.html",
+    "backButton": true,
+    "label": "Back to dashboard",
+    "overflowX": false,
+    "errors": []
+  },
+  {
+    "page": "n8n-config.html",
+    "backButton": true,
+    "label": "Back to settings",
+    "overflowX": false,
+    "errors": []
+  }
+]
