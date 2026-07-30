@@ -29,6 +29,28 @@ A modern, browser-based business management dashboard built with **HTML5, CSS3, 
 
 IT Cyber Business Suite is a frontend business dashboard designed to demonstrate practical dashboard development without using frontend frameworks. It provides interactive forms, searchable data tables, business reports, configurable settings, local browser storage, and an advanced n8n integration page.
 
+## Screenshots
+
+### Desktop Dashboard
+
+![Desktop dashboard](assets/images/desktop-dashboard.png)
+
+### Notification Center
+
+![Notification center](assets/images/production-notifications.png)
+
+### Profile Menu
+
+![Profile menu](assets/images/profile-menu-desktop.png)
+
+### n8n Configuration
+
+![n8n configuration](assets/images/n8n-config-desktop.png)
+
+### Mobile View
+
+<img src="">
+
 ## Features
 
 ### Dashboard
