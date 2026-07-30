@@ -1,5 +1,24 @@
 # IT Cyber Business Suite
 
+<p align="center">
+  <img src="assets/images/it-cyber-logo.png" alt="IT Cyber logo" width="140">
+</p>
+
+<p align="center">
+  A responsive business-management dashboard built with HTML5, CSS3, Vanilla JavaScript, Netlify Functions and n8n integration.
+</p>
+
+<p align="center">
+  <a href="https://github.com/kautukade/N8N-web-dashboard-">
+    <img src="https://img.shields.io/badge/GitHub-Repository-181717?logo=github" alt="GitHub repository">
+  </a>
+  <img src="https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white" alt="HTML5">
+  <img src="https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white" alt="CSS3">
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black" alt="JavaScript">
+  <img src="https://img.shields.io/badge/Netlify-00C7B7?logo=netlify&logoColor=white" alt="Netlify">
+  <img src="https://img.shields.io/badge/n8n-Automation-EA4B71" alt="n8n">
+</p>
+
 A modern, browser-based business management dashboard built with **HTML5, CSS3, and Vanilla JavaScript**. The application provides a single workspace for managing customers, leads, projects, tasks, reports, profile information, workspace preferences, and n8n automation settings.
 
 ## Live Demo
