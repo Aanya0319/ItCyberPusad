@@ -33,23 +33,18 @@ IT Cyber Business Suite is a frontend business dashboard designed to demonstrate
 
 ### Desktop Dashboard
 
-![Desktop dashboard](assets/images/desktop-dashboard.png)
+<img src="dashbord.jpeg">
 
 ### Notification Center
 
-![Notification center](assets/images/production-notifications.png)
-
+<img src="notification.jpeg">
 ### Profile Menu
 
-![Profile menu](assets/images/profile-menu-desktop.png)
-
-### n8n Configuration
-
-![n8n configuration](assets/images/n8n-config-desktop.png)
+<img src="profile.jpeg">
 
 ### Mobile View
 
-<img src="">
+<img src="production-mobile.png">
 
 ## Features
 
