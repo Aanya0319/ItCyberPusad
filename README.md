@@ -1,7 +1,7 @@
 # IT Cyber Business Suite
 
 <p align="center">
-  <img src="assets/images/it-cyber-logo.png" alt="IT Cyber logo" width="140">
+  <img src="it-cyber-logo.png" alt="IT Cyber logo" width="140">
 </p>
 
 <p align="center">
